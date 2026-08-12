@@ -302,8 +302,8 @@
       <div class="field">
         <label>Plot dimensions (ft)</label>
         <div class="row2">
-          <input type="number" id="plotWidth" min="0" value="30" step="1">
-          <input type="number" id="plotLength" min="0" value="60" step="1">
+          <input type="number" id="plotWidth" min="0" value="45" step="1">
+          <input type="number" id="plotLength" min="0" value="65" step="1">
         </div>
         <div class="hint">Width × Length</div>
       </div>
@@ -325,12 +325,12 @@
 
       <div class="field">
         <label>Ground floor rent (Rs. / sqft / month)</label>
-        <input type="number" id="baseRent" min="0" value="150" step="1">
+        <input type="number" id="baseRent" min="0" value="350" step="1">
       </div>
 
       <div class="field">
         <label>Valuation yield (%)</label>
-        <input type="number" id="yieldPct" min="0.1" value="8" step="0.1">
+        <input type="number" id="yieldPct" min="0.1" value="5" step="0.1">
         <div class="hint">Property value = Annual rent ÷ yield</div>
       </div>
 
@@ -451,11 +451,11 @@
   }
 
   function defaultPct(label){
-    if (label === 'Basement') return 35;
+    if (label === 'Basement') return 50;
     if (label === 'Ground') return 100;
-    if (label === '1st Floor') return 65;
-    if (label === '2nd Floor') return 55;
-    if (label === '3rd Floor') return 48;
+    if (label === '1st Floor') return 50;
+    if (label === '2nd Floor') return 25;
+    if (label === '3rd Floor') return 25;
     return 40;
   }
 
